@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -9,22 +9,25 @@ export default function NavBar(){
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavColour] = useState(false);
 
-  function scrollHandler(){
-    if(window.scrollY >= 20){
-      updateNavColour(true);
-    }else{
-      updateNavColour(false);
+  useEffect(() => {
+    function scrollHandler(){
+      if(window.scrollY >= 20){
+        updateNavColour(true);
+      }else{
+        updateNavColour(false);
+      }
     }
-  }
 
-  window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return(
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "mavBar"}
+      className={navColour ? "sticky" : ""}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
@@ -59,7 +62,7 @@ export default function NavBar(){
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/*<Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -67,7 +70,7 @@ export default function NavBar(){
               >
                 Projects
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item>*/}
 
             <Nav.Item>
               <Nav.Link
