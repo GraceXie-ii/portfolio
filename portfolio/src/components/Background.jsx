@@ -7,9 +7,11 @@ export default function Background(){
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 100,
-        y: (e.clientY / window.innerHeight) * 100,
+      requestAnimationFrame(() => {
+        setMousePosition({
+          x: (e.clientX / window.innerWidth) * 100,
+          y: (e.clientY / window.innerHeight) * 100,
+        });
       });
     };
 
@@ -17,7 +19,7 @@ export default function Background(){
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const particles = useMemo(() => Array.from({ length: 70}, (_, i) => (
+  const particles = useMemo(() => Array.from({ length: 35}, (_, i) => (
     <div
       key={i}
       className="particle"
@@ -68,13 +70,13 @@ export default function Background(){
           alt=""
           style={{
             position: "absolute",
-            width: "100vw",
-            height: "100vh",
-            left: `${(mousePosition.x - 30) * 0.05}%`,
-            top: `${(mousePosition.y - 30) * 0.03}%`,
+            width: "110vw",
+            height: "110vh",
+            left: `${(mousePosition.x - 50) * 0.02}%`,
+            top: `${(mousePosition.y - 50) * 0.02}%`,
             opacity: 0.9,
             transition: "all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-            animation: "cloudFloat 12s ease-in-out infinite",
+            //animation: "cloudFloat 12s ease-in-out infinite",
             filter: "blur(0.5px)",
             objectFit: "cover",
             willChange: "transform",

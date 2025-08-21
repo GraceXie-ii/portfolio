@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Content from "./Content.jsx";
 import Type from "./Type.jsx";
+import me from "../../assets/me.jpg";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
                   <strong className="main-name"> Grace Xie</strong>
                 </h1>
               </div>
+            </Col>
+            <Col md={5} className="headshot">
+              <img src={me} alt="Grace Xie" />
             </Col>
           </Row>
         </Container>
