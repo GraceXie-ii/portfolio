@@ -17,13 +17,14 @@ import {
 export default function App() {
 
   return (
-  <Router>
+  <Router basename="/portfolio">
     <Background />
     <NavBar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/project" element={<Projects/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path="*" element={<Navigate to="/" replace />}/>
     </Routes>
   </Router>
   )
