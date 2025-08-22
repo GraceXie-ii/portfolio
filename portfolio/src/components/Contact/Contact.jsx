@@ -9,9 +9,11 @@ export default function Contact() {
     <Container fluid style={{ minHeight: '100vh', paddingTop: '80px' }}>
       <Row>
         <Col md={12} className="contact-content">
-          <p1>
-            Feel free to reach out to ask for my <span className='purple'>resume</span>, <span className='purple'>ask questions</span> or just <span className='purple'>get in touch with me</span>!
-          </p1>
+          <div className="text-box">
+            <p1>
+              Feel free to reach out to ask for my <span className='purple'>resume</span>, <span className='purple'>ask questions</span> or just <span className='purple'>get in touch with me</span>!
+            </p1>
+          </div>
         </Col>
       </Row>
       <Row>

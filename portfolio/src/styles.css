@@ -318,3 +318,42 @@ button:focus {
 .icons a:hover {
   color: #502970;
 }
+
+.projects-content{
+  padding-top: 50px;
+  font-size: 2em !important;
+  text-align: center;
+  z-index: 100;
+  color: #ffffff;
+  position: relative;
+}
+
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(35, 11, 41, 0.459) !important;
+  color: white !important;
+  background-color: rgba(64, 49, 68, 0.459) !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(68, 21, 80, 0.561) !important;
+}
+  
