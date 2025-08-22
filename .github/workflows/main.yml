@@ -30,10 +30,14 @@ jobs:
           node-version: '20'
       
       - name: Navigate and install dependencies
-        run: npm install
+        run: |
+          cd portfolio
+          npm install
       
       - name: Build project
-        run: npm run build
+        run: |
+          cd portfolio
+          npm run build
       
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
@@ -41,7 +45,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './portfolio/dist'
       
       - name: Deploy to GitHub Pages
         id: deployment
