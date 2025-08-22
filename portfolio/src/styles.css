@@ -169,7 +169,7 @@ button:focus {
 
 .home-section {
   position: relative;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient), url(./assets/background.png);
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
