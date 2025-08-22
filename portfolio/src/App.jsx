@@ -21,7 +21,7 @@ export default function App() {
     <Background />
     <NavBar/>
     <Routes>
-      <Route path="/portfolio" element={<Home/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/project" element={<Projects/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="*" element={<Navigate to="/" replace />}/>
