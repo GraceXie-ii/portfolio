@@ -23,7 +23,6 @@ Visit the live portfolio: [https://gracexie-ii.github.io/portfolio/](https://gra
 - **Styling**: Bootstrap 5.3.7 + Custom CSS
 - **Icons**: React Icons 5.5.0
 - **Animations**: Typewriter Effect
-- **Background**: TSParticles for interactive space effects
 - **Build Tool**: Vite 7.0.6
 - **Deployment**: GitHub Pages with GitHub Actions
 
