@@ -21,7 +21,6 @@ Visit the live portfolio: [https://gracexie-ii.github.io/portfolio/](https://gra
 - **Frontend**: React 19.1.0
 - **Routing**: React Router DOM 7.8.1
 - **Styling**: Bootstrap 5.3.7 + Custom CSS
-- **Icons**: React Icons 5.5.0
 - **Animations**: Typewriter Effect
 - **Build Tool**: Vite 7.0.6
 - **Deployment**: GitHub Pages with GitHub Actions
