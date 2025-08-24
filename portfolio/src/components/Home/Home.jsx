@@ -11,7 +11,7 @@ export default function Home() {
           <Row>
             <Col md={7} className="home-header">
               <div className="text-box">
-                <div><Type /></div>
+                <div className="typewriter-container"><Type /></div>
 
                 <h1 className="heading-name">
                   I am

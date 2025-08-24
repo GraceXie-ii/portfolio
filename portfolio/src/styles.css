@@ -267,6 +267,11 @@ button:focus {
     display: none !important;
   }
   
+  .typewriter-container {
+    margin-bottom: 30px !important;
+    padding-bottom: 20px !important;
+  }
+  
   .home-header {
     padding-top: 30px !important;
   }
@@ -274,7 +279,8 @@ button:focus {
   .heading-name {
     font-size: 1.8em !important;
     padding-left: 20px !important;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
+    clear: both !important;
   }
   
   .text-box {
