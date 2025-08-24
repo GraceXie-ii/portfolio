@@ -21,9 +21,7 @@ Visit the live portfolio: [https://gracexie-ii.github.io/portfolio/](https://gra
 - **Frontend**: React 19.1.0
 - **Routing**: React Router DOM 7.8.1
 - **Styling**: Bootstrap 5.3.7 + Custom CSS
-- **Icons**: React Icons 5.5.0
 - **Animations**: Typewriter Effect
-- **Background**: TSParticles for interactive space effects
 - **Build Tool**: Vite 7.0.6
 - **Deployment**: GitHub Pages with GitHub Actions
 
@@ -156,9 +154,6 @@ The portfolio is fully responsive and optimized for:
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👩‍💻 Author
 
