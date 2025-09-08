@@ -117,6 +117,23 @@ button:focus {
   color: rgb(250, 250, 250) !important;
 }
 
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: url('./assets/lavendar_button.png');
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
 .logo {
   height: 2.5em !important;
   width: 2.5em !important;
